@@ -15,8 +15,10 @@
 ```bash
 git clone https://github.com/revival0728/electron-typescript-template.git [REPO NAME]
 ```
-2. Go to the directory and run dev
+2. Go to the directory, run install and dev
 ```bash
-cd [REPO NAME] && npm run dev
+cd [REPO NAME]
+npm install
+npm run dev
 ```
 3. Enjoy Coding :)
