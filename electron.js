@@ -3,8 +3,10 @@ const path = require('path');
 const child_proccess = require('child_process');
 const { sync, initSync, saveLastModified } = require('./sync.js');
 
+const buildOnly = process.argv.includes("build");
+
 const init = () => {
-  console.log("Initializing...");
+  console.log(`${buildOnly ? "Building" : "Initializing"}...`);
   const tsc = child_proccess.spawnSync("tsc", { shell: true });
   const tailwindcss = child_proccess.spawnSync("@tailwindcss", ["-i", "./src/global.css", "-o", "./dist/global.css"], {
     shell: true,
@@ -62,7 +64,7 @@ const spawn_sync = async () => {
   }
 };
 
-if(init()) {
+if(init() && !buildOnly) {
   spawn_sync();
   spawn_tsc();
   spawn_tailwindcss();

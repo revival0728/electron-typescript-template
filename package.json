@@ -4,7 +4,7 @@
   "description": "a template for developing electron with typescript",
   "scripts": {
     "dev": "node electron.js",
-    "sync": "node sync.js"
+    "build": "node electron.js build"
   },
   "author": "revival0728",
   "license": "MIT",
