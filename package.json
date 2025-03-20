@@ -1,0 +1,19 @@
+{
+  "name": "electron-typescript-template",
+  "version": "1.0.0",
+  "description": "a template for developing electron with typescript",
+  "scripts": {
+    "dev": "node electron.js",
+    "sync": "node sync.js"
+  },
+  "author": "revival0728",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.0.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}
