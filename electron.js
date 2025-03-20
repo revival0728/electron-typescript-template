@@ -6,7 +6,7 @@ const { sync, initSync, saveLastModified } = require('./sync.js');
 const init = () => {
   console.log("Initializing...");
   const tsc = child_proccess.spawnSync("tsc", { shell: true });
-  const tailwindcss = child_proccess.spawnSync("@tailwindcss", ["-i", "./src/global.css", "-o", "./dist/global.css", "--watch"], {
+  const tailwindcss = child_proccess.spawnSync("@tailwindcss", ["-i", "./src/global.css", "-o", "./dist/global.css"], {
     shell: true,
   });
   initSync();
