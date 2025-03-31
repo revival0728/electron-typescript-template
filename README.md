@@ -15,6 +15,7 @@
 ```bash
 git clone https://github.com/revival0728/electron-typescript-template.git [REPO NAME]
 ```
+3. Configure `syncExt` in `sync.js`
 2. Go to the directory, run install and dev
 ```bash
 cd [REPO NAME]
